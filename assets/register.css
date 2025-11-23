@@ -1,0 +1,90 @@
+#scroll-up-btn.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+body {
+  background-color: #eff2f4;
+  font-size: 0.875rem;
+}
+
+.app-header {
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 1rem !important;
+}
+
+.app-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #343a40;
+}
+
+.input-group .form-control {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.password-toggle {
+  border: none;
+  background-color: #f1f3f5;
+  border-radius: 0 0.3rem 0.3rem 0;
+  color: #6c757d;
+  padding: 0.6rem 0.75rem;
+  display: flex;
+  align-items: center;
+}
+.password-toggle:hover,
+.password-toggle:focus {
+  background-color: #e9ecef;
+  color: #495057;
+  box-shadow: none;
+}
+.password-toggle i {
+  font-size: 1rem;
+}
+
+.guidelines-section {
+  background: linear-gradient(135deg, #9e84f3 0%, #623dfd 100%);
+  color: #fff;
+  border-radius: 0.3rem;
+}
+
+.guidelines-section h2 {
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem !important;
+  text-align: center;
+}
+
+.guidelines-section .guidelines-list {
+  margin-bottom: 1.5rem;
+}
+
+.guidelines-section .guidelines-list li {
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-bottom: 1rem !important;
+}
+
+.guidelines-section .guidelines-list li i {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-right: 0.75rem !important;
+  vertical-align: middle;
+}
+
+.guidelines-section .btn-add-account {
+  background-color: #fff;
+  color: #645efb;
+  font-weight: 600;
+  padding: 0.75rem 2.5rem;
+  border-radius: 0.3rem;
+  border: none;
+  font-size: 1rem;
+}
+
+.guidelines-section .btn-add-account:hover {
+  background-color: #e7e9e9;
+  color: #5228f7;
+}
+

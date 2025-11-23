@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+}
+
+.wave {
+  position: absolute;
+  opacity: 0.6;
+  filter: blur(80px);
+}
+
+.wave-left {
+  width: 60vw;
+  height: 60vw;
+  bottom: -20vw;
+  left: -20vw;
+  background: radial-gradient(
+    circle at center,
+    #b496fd 20%,
+    #8c7afc 70%,
+    #635dfb 100%
+  );
+  border-radius: 50%;
+}
+
+.wave-right {
+  width: 70vw;
+  height: 70vw;
+  top: -25vw;
+  right: -25vw;
+  background: radial-gradient(
+    circle at center,
+    #635dfb 20%,
+    #8c7afc 70%,
+    #b496fd 100%
+  );
+  border-radius: 50%;
+}
+
+.login-container {
+  z-index: 1;
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.login-container img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #6a5af9, #b583ff);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #5b4de6, #a872ff);
+}
+
+.form-control:focus {
+  border-color: #8c7afc;
+  box-shadow: 0 0 0 0.2rem rgba(140, 122, 252, 0.25);
+}
+
+.signup-link {
+  color: #6a5af9;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}

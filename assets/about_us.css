@@ -1,0 +1,206 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: #ffffff;
+  color: #4a5568;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-content-wrapper {
+  margin-left: 80px;
+  transition: margin-left 0.3s ease;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: calc(100% - 80px);
+}
+
+.menu:hover + #main-content-wrapper {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+}
+
+.content-area {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.hero-section {
+  padding: 3rem 1rem;
+  background-color: #fff;
+}
+
+.hero-icon {
+  font-size: 3rem;
+  color: #635dfb;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  color: #635dfb;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-family: sans-serif;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+.hero-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  height: 4px;
+  background-color: #adb5bd;
+  border-radius: 2px;
+}
+
+.hero-text {
+  color: #5a6474;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.team-section {
+  background-color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.team-title {
+  color: #635dfb;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+
+  font-size: 2rem;
+
+  padding-left: calc(8.333% + 15px);
+}
+
+.team-member-placeholder {
+  background-color: #e9ecef;
+  border: 1px solid #dee2e6;
+  border-radius: 1rem;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+.team-member-placeholder.highlight {
+  border-color: #635dfb;
+  border-width: 2px;
+}
+
+.team-member-info {
+  text-align: center;
+}
+
+.team-member-info .role {
+  display: inline-block;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  color: #6c757d;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+.team-member-info .name {
+  font-weight: 500;
+  color: #343a40;
+  font-size: 0.95rem;
+}
+
+.team-description-box {
+  background-color: #29acff;
+  border-radius: 1rem;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-description-box p {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-size: 25px;
+}
+
+.team-articles-button {
+  background-color: white;
+  color: #29acff;
+  border: 1px solid #ffffff;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  transition: all 0.2s ease;
+  align-self: flex-start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-articles-button:hover {
+  background-color: #f0f0f0;
+  color: #29acff;
+  border-color: #f0f0f0;
+}
+
+.scroll-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1010;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scroll-buttons button {
+  background-color: rgba(100, 93, 251, 0.8);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, opacity 0.3s ease,
+    visibility 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-buttons button:hover {
+  background-color: rgba(99, 93, 251, 1);
+}
+
+#scroll-up-btn {
+  opacity: 0;
+  visibility: hidden;
+}
